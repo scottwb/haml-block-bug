@@ -28,7 +28,7 @@ Using the following versions of the Haml gem:
 
   * Haml 3.1.1
   * Haml 3.1.2
-  * Hame 3.1.3 _(Independently verified by by [@urbanautomaton](https://github.com/urbanautomaton) - I have not confirmed)_
+  * Haml 3.1.3 _(Independently verified by by [@urbanautomaton](https://github.com/urbanautomaton) - I have not confirmed)_
 
 
 Running The Test
