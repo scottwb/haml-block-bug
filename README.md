@@ -1,7 +1,12 @@
 Repro For Haml Block Bug
 ========================
 
-This is a simple Rails app that demonstrates an inconsistency in the Haml parser between the `development` and `production` environments, exhbibiting what I believe is a bug in the production environment.
+This is a simple Rails app that demonstrates an inconsistency in the Haml parser between the
+`development` and `production` environments, exhibiting what I believe is a bug in the production environment.
+
+_**UPDATE:** I've now had third-party reports of this example app demonstrating the bug only when
+`Haml::Template.options[:ugly]` is set to `true`, regardless of what environment is being used.
+[See Haml Issue #462.](https://github.com/nex3/haml/issues/462)_
 
 Using the included Gemfile and RVM, the results of this demonstration have been confirmed on:
 
@@ -23,6 +28,7 @@ Using the following versions of the Haml gem:
 
   * Haml 3.1.1
   * Haml 3.1.2
+  * Hame 3.1.3 _(Independently verified by by [@urbanautomaton](https://github.com/urbanautomaton) - I have not confirmed)_
 
 
 Running The Test
